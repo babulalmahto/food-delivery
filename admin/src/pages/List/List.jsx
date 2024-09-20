@@ -3,9 +3,9 @@ import './List.css'
 import axios from 'axios';
 import { toast } from 'react-toastify';
 
-const List = () => {
+const List = ({ url }) => {
 
-    let url = "http://localhost:4000"
+    // let url = "http://localhost:4000"; It's passing through props from App.jsx component
     const [list, setList] = useState([]);
 
     const fetchList = async () => {
